@@ -1,0 +1,66 @@
+.App{
+  position:relative;
+}
+.dengdai{
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: cadetblue;
+  font-size: 80px;
+}
+.daohanglan{
+    width: 100%;
+    height: 50px;
+    align-items: center;
+    /* position:fixed; */
+    font-size: 30px;
+    background-color: darkseagreen;
+    color: slateblue;
+    display: flex;
+    justify-content: space-around;
+
+
+}
+.daohanglan>*{
+  text-decoration:none;
+  font-family: cursive;
+  /* backdrop-filter: blur(10px) brightness(200%);
+  background: rgba(0,0,0,0.8); */
+}
+.chang{
+  height: 100vh;
+  background-color: blueviolet;
+}
+
+.App-header {
+  background-color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

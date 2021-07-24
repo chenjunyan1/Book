@@ -1,0 +1,61 @@
+.beijingshu{
+    /* transition: 2s all ease 0s;; */
+    background-image: url(../background_img/tushu.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.all_book{
+
+}
+.Book_1{
+    /* padding-top: 30px; */
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    /* background-color: burlywood; */
+    backdrop-filter: blur(5px);
+    background: rgba(100,100,100,0.8);
+    font-size: 100px;
+    color:yellow;
+}
+.Book_1>*{
+    padding-top: 20vh;
+}
+.shuji{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: darkseagreen;
+    position: absolute;
+}
+.sousuokuang{
+    display: flex;
+    justify-content:center;
+}
+.sousuokuang>img{
+    width: 45px;
+}
+.input_search{
+    width: 350px;
+    height: 30px;
+    text-align: center;
+    border-radius: 30px;
+    outline: none; 
+    border-style:solid;
+    border-color:#CCFFFF #FFCCCC;
+    border-width: 5px;
+}
+.qianlie{
+    font-size: 30px;
+    color:blueviolet;
+
+}
+.sousuo{
+    background-color: beige;
+}
+.xiangguan{
+    color: chocolate;
+    font-size: 22px;
+}

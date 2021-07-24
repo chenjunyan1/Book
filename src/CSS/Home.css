@@ -1,0 +1,134 @@
+p{
+    font-family: cursive;
+    font-size: 28px;
+}
+.Home{
+    transition: all 4s;
+}
+.page_one{
+    transition: all 4s;
+    width: 100%;
+    height: 100vh;
+    /* background-color: antiquewhite; */
+    background-image: url(../background_img/tushu.jpg);
+    background-size: cover;
+    background-position: center;
+   
+}
+.page_one>*{
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    flex-direction:column;
+    align-items: center;
+    height: 100vh;
+
+}
+.chongxi_huibenguan{
+    font-size: 110px;
+    font-family: cursive;
+    color: teal;
+}
+
+.huanying{
+    text-align: center;
+    font-family: cursive;
+    font-size:30px;
+    color: indianred;
+}
+.tushuguan{
+    width: 350px;
+}
+.page_two{
+    transition: all 4s;
+
+    position:absolute;
+    width: 100%;
+    /* height: 100vh; */
+    background-color: lightblue;
+}
+.chuangzao_img{
+    position:absolute;
+    bottom: 10%;
+    right: 5%;
+}
+.chuangzao{
+    width: 100%;
+}
+
+.home_riji{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: orange;
+}
+
+.jilu{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.jilu>*{
+    /* border-style: none; */
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+    border-radius: 20px;
+    border-style:solid;
+    border-color:#dbccff #FFCCCC ;
+    height: 80px;
+    /* background-color:gold; */
+}
+.shuru{
+    border-radius:20px 0px 0px 20px;
+    text-align: center;
+    width: 90%;
+    border-right: none;
+    border-color: indianred;
+    border-width:5px;
+    outline: none; 
+
+}
+.tijiao{
+    outline: none; 
+
+    border-radius:0px 20px 20px 0px;
+    width: 10%;
+    border-color: indianred;
+    border-width:5px;
+    text-align: center;
+    border-left: none;
+    background-color: rgb(181, 202, 124);
+    color:crimson;
+    /* border-style: none; */
+    /* background-color: gold; */
+}
+.chongwenriji{
+    text-align: center;
+    font-size: 70px;
+    /* color: brown; */
+    font-family: cursive;
+}
+.two{
+    background-color: coral;
+}
+@media screen and (max-width: 712px) {
+    .chongxi_huibenguan {
+        font-size: 90px;
+    }
+}
+@media screen and (max-width: 712px) {
+    .chongxi_huibenguan {
+        font-size: 50px;
+    }
+}
+@media screen and (max-width: 590px) {
+    .huanying {
+        font-size: 30px;
+    }
+    p{
+        font-size: 10px;
+    }
+}
