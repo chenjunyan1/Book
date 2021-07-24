@@ -75,6 +75,10 @@ let zuozhe = ["莱尔.卢埃林,迈克.戈登　", "莱尔.卢埃林,迈克.戈�
 
 let zhuanhuan_arr = [];
 
+let beiing_1 = {
+    background: 'linear-gradient(to right, rgb(34, 193, 195), rgb(253, 187, 45))', 
+}
+
  //将index——arr赋值
     for (let m = 0; m < len; m++) {
         index_book.push(convertToRoman(m));
@@ -121,6 +125,7 @@ let zhuanhuan_arr = [];
     function search_book(num){
         return new_name[num];
     }
+
 //智能模糊搜索引擎
     function vague_search (input_1){
         if (input_1) {
@@ -136,6 +141,7 @@ let zhuanhuan_arr = [];
                     str+=search_book(l)+"--";
                 }
             }
+            
             zhuanhuan_arr = arr_2;
             search_books = arr.length;
             zhuanhuan(name,arr_2);
@@ -249,7 +255,7 @@ function zhuanhuan(arr,arr_2){
                         {name.map((mingzi,index) => {
                             if (index<search_books) {
                                 return (
-                                    <Book_one key={index} color={{backgroundColor:"teal"}} color_2={{backgroundColor:"darkgoldenrod"}}  name={name[index]} img_link={"Img/shubaonan.svg"} renqun={index_book[index]} leixing={leixing_book[index]} zuozhe={zuozhe[index]} />
+                                    <Book_one key={index} color={beiing_1} color_2={{backgroundColor:"darkmagenta"}}  name={name[index]} img_link={"Img/shubaonan.svg"} renqun={index_book[index]} leixing={leixing_book[index]} zuozhe={zuozhe[index]} />
                                 )
                             }else{
                                 return (

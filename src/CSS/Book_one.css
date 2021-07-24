@@ -23,8 +23,8 @@
     flex-direction: column;
     width: 300px;
     height: 150px;
-    /* background-color: antiquewhite; */
-    background: #c6ffdd;  /* fallback for old browsers */      background: -webkit-linear-gradient(to right, rgb(198, 255, 221), rgb(251, 215, 134), rgb(247, 121, 125));  /* Chrome 10-25, Safari 5.1-6 */      background: linear-gradient(to right, rgb(198, 255, 221), rgb(251, 215, 134), rgb(247, 121, 125)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */          border-radius: 30px;
+    background: linear-gradient(to right, rgb(198, 255, 221), rgb(251, 215, 134), rgb(247, 121, 125));        
+    border-radius: 30px;
     transition: all 1s;
     box-shadow: 10px 10px 11px ivory;
     position: relative;
