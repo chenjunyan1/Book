@@ -8,7 +8,8 @@ p{
 .page_one{
     transition: all 4s;
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
+    height: calc(100vh - 10px);
     /* background-color: antiquewhite; */
     background-image: url(../background_img/tushu.jpg);
     background-size: cover;

@@ -16,8 +16,7 @@
     align-items: center;
     /* position:fixed; */
     font-size: 30px;
-    background-color: darkseagreen;
-    color: slateblue;
+    background: linear-gradient(to right, rgb(131, 96, 195), rgb(46, 191, 145)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */          color: slateblue;
     display: flex;
     justify-content: space-around;
 

@@ -244,20 +244,22 @@ function zhuanhuan(arr,arr_2){
                         </div>
                     </div>
                 </div>
-                <div className="shuji">
-                    {name.map((mingzi,index) => {
-                        if (index<search_books) {
-                            return (
-                                <Book_one key={index} color={{backgroundColor:"teal"}} color_2={{backgroundColor:"darkgoldenrod"}}  name={name[index]} img_link={"Img/shubaonan.svg"} renqun={index_book[index]} leixing={leixing_book[index]} zuozhe={zuozhe[index]} />
-                            )
-                        }else{
-                            return (
-                                <Book_one key={index} name={name[index]} img_link={"Img/shubaonv.svg"} renqun={index_book[index]} leixing={leixing_book[index]} zuozhe={zuozhe[index]} />
-                            )
-                        }
-                
-                })}
+                <div className="shuji_big">
+                    <div className="shuji">
+                        {name.map((mingzi,index) => {
+                            if (index<search_books) {
+                                return (
+                                    <Book_one key={index} color={{backgroundColor:"teal"}} color_2={{backgroundColor:"darkgoldenrod"}}  name={name[index]} img_link={"Img/shubaonan.svg"} renqun={index_book[index]} leixing={leixing_book[index]} zuozhe={zuozhe[index]} />
+                                )
+                            }else{
+                                return (
+                                    <Book_one key={index} name={name[index]} img_link={"Img/shubaonv.svg"} renqun={index_book[index]} leixing={leixing_book[index]} zuozhe={zuozhe[index]} />
+                                )
+                            }
+                        })}
+                    </div>
                 </div>
+                
             </div>
         )
 

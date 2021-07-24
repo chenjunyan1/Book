@@ -1,5 +1,5 @@
 .beijingshu{
-    /* transition: 2s all ease 0s;; */
+    transition: 2s all ease 0s;
     background-image: url(../background_img/tushu.jpg);
     background-size: cover;
     background-position: center;
@@ -17,18 +17,26 @@
     backdrop-filter: blur(5px);
     background: rgba(100,100,100,0.8);
     font-size: 100px;
-    color:yellow;
+    color:yellow; 
 }
 .Book_1>*{
     padding-top: 20vh;
 }
-.shuji{
+.shuji_big{
+    transition: 2s all ease 0s;
+
     width: 100%;
+    background: #e1eec3;  /* fallback for old browsers */      background: -webkit-linear-gradient(to right, rgb(225, 238, 195), rgb(240, 80, 83));  /* Chrome 10-25, Safari 5.1-6 */      background: linear-gradient(to right, rgb(225, 238, 195), rgb(240, 80, 83)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */      
+}
+.shuji{
+    /* opacity: 0.1; */
+    width: 100%;
+    backdrop-filter: blur(5px);
+    background: rgba(0,0,0,0.2);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color: darkseagreen;
-    position: absolute;
+    /* position: absolute; */
 }
 .sousuokuang{
     display: flex;
@@ -53,8 +61,8 @@
 
 }
 .sousuo{
-    background-color: beige;
-}
+    background: linear-gradient(to right, rgb(16, 141, 199), rgb(239, 142, 56)); 
+    }
 .xiangguan{
     color: chocolate;
     font-size: 22px;
