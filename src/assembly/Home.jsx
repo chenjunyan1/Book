@@ -66,8 +66,8 @@ export default class Home extends Component{
 
         // this.props.form.resetFields();  
 
-        if (this.state.value.length<=10 || this.state.value==neirong_arr[0] || this.state.value.length>=140) {
-            alert('内容必须10个字符以上，内容不可以和上一次重复哦！日志内容不能超过140个字符！如果已满足以上条件请删除刚刚填写地日志内容即可生成日志卡片');
+        if (this.state.value.length<=10 || this.state.value==neirong_arr[0] || this.state.value.length>=120) {
+            alert('内容必须10个字符以上，内容不可以和上一次重复哦！日志内容不能超过120个字符！如果已满足以上条件请删除刚刚填写地日志内容即可生成日志卡片');
         }else{
             let color_arrs = getRandomColor();
             // time_arr.push(time());

@@ -14,13 +14,16 @@
     /* word-wrap: break-word;  */
     word-break:break-all; 
     word-break: normal;
-    overflow: hidden;
+    /* overflow: hidden; */
     object-fit: cover;
 
         /* height: 70%; */
     /* text-align: center; */
 }
 
+.xia>*{
+    font-size: 20px;
+}
 .waikuang{
     margin: 10px;
     padding: 10px;
