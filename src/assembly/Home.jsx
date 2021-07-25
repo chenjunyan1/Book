@@ -1,6 +1,10 @@
-import React, {Component} from "react"
-import Day from './SonAssembly/Day'
+// import React, {Component} from "react"
+// import Day from ''
 import '../CSS/Home.css';
+import React, { Suspense, lazy, Component } from 'react';
+
+const Day = lazy(() => import('./SonAssembly/Day'));
+
 // localStorage.content_arr =[];
 // let content_arr = [];
 
@@ -122,7 +126,7 @@ export default class Home extends Component{
                         <div className="chongxi_huibenguan">
                             崇西绘本馆
                         </div>
-                        <img className="tushuguan" src="Img/tushuguan.svg" alt="" />
+                        <img className="tushuguan" src="Img/tushu_logo_2.svg" alt="" />
                     </div>
                     
                 </div>
@@ -162,12 +166,15 @@ export default class Home extends Component{
                         </form>
                         <br />
                         <br />
-                        <div className="home_riji">
-                            {neirong_arr.map((mingzi,index) => {
-                                return(
-                                    <Day key={index} time={time_arr[index]} content={neirong_arr[index]} color={{backgroundColor:color_arr[index]}} font_color={{color:fontColor_arr[index]}}/>
-                            )})}
-                        </div>
+                        <Suspense fallback={
+                        <div>Loading...</div>}>
+                            <div className="home_riji">
+                                {neirong_arr.map((mingzi,index) => {
+                                    return(
+                                        <Day key={index} time={time_arr[index]} content={neirong_arr[index]} color={{backgroundColor:color_arr[index]}} font_color={{color:fontColor_arr[index]}}/>
+                                )})}
+                            </div>
+                        </Suspense>
                         <div className="dilan">
                         </div>
                     </div>

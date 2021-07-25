@@ -3,7 +3,7 @@ p{
     font-size: 28px;
 }
 .Home{
-    transition: all 4s;
+    transition: all 1s;
 }
 .page_one{
     transition: all 4s;
@@ -62,9 +62,8 @@ p{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color: orange;
+    background: #a1ffce;  /* fallback for old browsers */      background: -webkit-linear-gradient(to right, rgb(161, 255, 206), rgb(250, 255, 209));  /* Chrome 10-25, Safari 5.1-6 */      background: linear-gradient(to right, rgb(161, 255, 206), rgb(250, 255, 209)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */      
 }
-
 .jilu{
     width: 100%;
     display: flex;
@@ -113,8 +112,8 @@ p{
     font-family: cursive;
 }
 .two{
-    background-color: coral;
-}
+ background: linear-gradient(to right, rgb(0, 176, 155), rgb(150, 201, 61)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */     
+ }
 @media screen and (max-width: 712px) {
     .chongxi_huibenguan {
         font-size: 90px;

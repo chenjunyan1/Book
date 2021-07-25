@@ -14,8 +14,6 @@ const Recruit = lazy(() => import('./assembly/Recruit'));
 const Donation = lazy(() => import ('./assembly/Donation'));
 
 export default function App() {
-
-  
   return (
     <div className="App">
        <Router>
