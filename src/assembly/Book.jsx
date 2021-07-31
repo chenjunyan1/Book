@@ -158,9 +158,9 @@ let beiing_1 = {
                         <div className="qianlie">
                             &emsp;算法将与搜索条件相关的书籍优先至前列
                         </div>
-                        <div className="xiangguan">
+                        {/* <div className="xiangguan">
                             与搜索条件有关的ID为： &emsp;：{id}
-                        </div>
+                        </div> */}
                         <br/>
                         <div className="xiangguan">
                             与搜索条件有关的书籍有： &emsp;：{str}

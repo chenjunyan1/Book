@@ -25,21 +25,21 @@ export default function App() {
             <Link to="./Recruit">招募</Link>
             <Link to="./Donation">捐赠</Link>
           </div>
-
-          <Switch>
-            <Suspense fallback={
+          <Suspense fallback={
             <header className="App-header">
                 Loading...
                 <img src="Img/loading.svg" className="App-logo" alt="logo" />
             </header>}>
-              <Route exact path="/" component={Home} />
-              <Route path="/About" component={About} />
-              <Route path="/Book" component={Book} />
-              <Route path="/Consult" component={Consult} />
-              <Route path="/Recruit" component={Recruit} />
-              <Route path="/Donation" component={Donation} />
-            </Suspense>
-          </Switch>
+            <Switch>
+                <Route exact path="/" component={Home} />
+                <Route path="/About" component={About} />
+                <Route path="/Book" component={Book} />
+                <Route path="/Consult" component={Consult} />
+                <Route path="/Recruit" component={Recruit} />
+                <Route path="/Donation" component={Donation} />
+            </Switch>
+          </Suspense>
+
 
         </Router>
         {/* <div className="dengdai">Loading...</div> */}
