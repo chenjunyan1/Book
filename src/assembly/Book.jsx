@@ -156,7 +156,7 @@ let beiing_1 = {
                 return(
                     <div>
                         <div className="qianlie">
-                            &emsp;算法将与搜索条件相关的书籍优先至前列
+                            &emsp;算法将与搜索条件相关的书籍优先至前列并进行渐变
                         </div>
                         {/* <div className="xiangguan">
                             与搜索条件有关的ID为： &emsp;：{id}
@@ -231,7 +231,7 @@ function zhuanhuan(arr,arr_2){
                 </div>
                 <div className="sousuo">
                     <div>
-                        本馆共藏图书{len}本，（本网站不定时更新）
+                        本馆共藏图书{len}本，（本网站书籍将不定时更新，上次更新时间为2021.7.15）
                     </div>
                     <div>
                         <div>
