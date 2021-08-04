@@ -158,7 +158,7 @@ export default class Home extends Component{
                         <div>
                             <div>使用教程：</div>
                             <div>&emsp;输入超过10并不多于140个字符的日志 -&gt; click Enter key 或 click记录 -&gt; 即可生成所有日志卡片。</div>
-                            <div>&emsp;每天可以在这里每天记录你的生活哦！为保护你的隐私该日志仅你可见~</div>
+                            <div>&emsp;每天可以在这里每天记录你的生活哦！该日志可永久保留，为保护你的隐私该日志仅你可见~</div>
                             <br />
                             <br />
                         </div>

@@ -84,7 +84,7 @@ p{
 .shuru{
     border-radius:20px 0px 0px 20px;
     text-align: center;
-    width: 90%;
+    width: 70%;
     border-right: none;
     border-color: indianred;
     border-width:5px;
@@ -95,7 +95,7 @@ p{
     outline: none; 
 
     border-radius:0px 20px 20px 0px;
-    width: 10%;
+    width: 30%;
     border-color: indianred;
     border-width:5px;
     text-align: center;
