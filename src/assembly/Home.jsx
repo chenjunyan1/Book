@@ -71,9 +71,10 @@ export default class Home extends Component{
         // this.props.form.resetFields();  
 
         if (this.state.value.length<=10 || this.state.value==neirong_arr[0] || this.state.value.length>=120) {
-            alert('内容必须10个字符以上，内容不可以和上一次重复哦！日志内容不能超过120个字符！如果已满足以上条件请删除刚刚填写地日志内容即可生成日志卡片');
+            alert('内容必须10个字符以上;内容不可以和上一次重复;日志内容不能超过120个字符;');
         }else{
             let color_arrs = getRandomColor();
+
             // time_arr.push(time());
             if (localStorage.shijian && localStorage.neirong && localStorage.yanse && localStorage.fontColor) {
                 //如果之前存过就继续加
@@ -82,7 +83,6 @@ export default class Home extends Component{
                 localStorage.neirong += this.state.value+"￥";
                 localStorage.yanse += color_arrs[0]+"￥";
                 localStorage.fontColor += color_arrs[1]+"￥";
-
             }else{
                 //第一次|初始化
                 localStorage.shijian = time()+"￥";
@@ -110,6 +110,10 @@ export default class Home extends Component{
             color_arr = color_arr.split("￥").reverse ();
             fontColor_arr = fontColor_arr.split("￥").reverse ();
 
+            this.setState({
+                value:"",
+            });
+            
             // this.state.value = "";
             // localStorage.clear();
             // neirong.push(this.state.value);
@@ -148,12 +152,12 @@ export default class Home extends Component{
                     <div className="two">
                         <div>
                             <h1 className="chongwenriji">
-                                崇文日记
+                                崇文LOG
                             </h1>
                         </div>
                         <div>
                             <div>使用教程：</div>
-                            <div>&emsp;输入超过10并不多于140个字符的日志 -&gt; click Enter key 或 click记录 -&gt; 删除刚刚输入的日志即可生成所有日志卡片。</div>
+                            <div>&emsp;输入超过10并不多于140个字符的日志 -&gt; click Enter key 或 click记录 -&gt; 即可生成所有日志卡片。</div>
                             <div>&emsp;每天可以在这里每天记录你的生活哦！为保护你的隐私该日志仅你可见~</div>
                             <br />
                             <br />
