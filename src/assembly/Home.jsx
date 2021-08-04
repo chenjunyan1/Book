@@ -143,7 +143,7 @@ export default class Home extends Component{
                         <p> &emsp;content</p>
                     </div>
                     <div className="chuangzao_img">
-                        <img className="chuangzao" src="Img/chuangzao.svg" alt="" />
+                        {/* <img className="chuangzao" src="Img/chuangzao.svg" alt="" /> */}
                     </div>
                     <div className="two">
                         <div>
