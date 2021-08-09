@@ -14,7 +14,6 @@ p{
     background-image: url(../background_img/tushu.jpg);
     background-size: cover;
     background-position: center;
-   
 }
 .page_one>*{
     backdrop-filter: blur(8px);
@@ -37,9 +36,11 @@ p{
     font-size:30px;
     color: indianred;
 }
+
 .tushuguan{
     width: 350px;
 }
+
 .page_two{
     transition: all 4s;
 

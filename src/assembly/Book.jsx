@@ -148,9 +148,9 @@ let beiing_1 = {
             zhuanhuan(zuozhe,arr_2);
             zhuanhuan(leixing_book,arr_2);
             zhuanhuan(index_book,arr_2);
-            let id = arr.join("--");
+            let D = arr.join("--");
             if (str == "") {
-                id = "NULL";
+                D = "NULL";
                 str = "NULL";
             }
                 return(
@@ -211,10 +211,19 @@ function zhuanhuan(arr,arr_2){
    export default class Book extends Component{
     constructor(props) {
         super(props);
-        this.state = {value: ""};
+        this.state = {
+            value: "",
+        };
         this.handleChange = this.handleChange.bind(this);
+        this.handleClick = this.handleClick.bind(this);
     };
-    
+    handleClick(e){
+        e.preventDefault();
+        console.log("点击");
+        this.setState({
+            value:"",
+        });
+    }
     handleChange(event) {
       this.setState({value: event.target.value});
     };
@@ -241,7 +250,8 @@ function zhuanhuan(arr,arr_2){
                         </div>
                         <div className="sousuokuang" >
                             <img src="Img/search.svg" alt="" /> 
-                            <input placeholder="Search Book | author" className="input_search" type="text" value={value} onChange={this.handleChange} /> 
+                            <input placeholder="Search Book | Author" className="input_search" type="text" value={value} onChange={this.handleChange} />
+                            <img onClick={this.handleClick} src="Img/Chahao.svg" alt="清除" /> 
                         </div>
                         <div>
                             <br />
