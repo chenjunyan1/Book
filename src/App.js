@@ -11,7 +11,8 @@ const About = lazy(() => import('./assembly/About'));
 const Book = lazy(() => import('./assembly/Book'));
 const Consult = lazy(() => import('./assembly/Consult'));
 const Recruit = lazy(() => import('./assembly/Recruit'));
-const Donation = lazy(() => import ('./assembly/Donation'));
+const Donation = lazy(() => import('./assembly/Donation'));
+const Null = lazy(() => import('./assembly/SonAssembly/Null'));
 
 export default function App() {
   return (
@@ -37,6 +38,7 @@ export default function App() {
                 <Route path="/Consult" component={Consult} />
                 <Route path="/Recruit" component={Recruit} />
                 <Route path="/Donation" component={Donation} />
+                <Route component={Null}/>
             </Switch>
           </Suspense>
 
