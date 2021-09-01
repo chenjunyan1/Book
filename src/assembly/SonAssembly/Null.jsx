@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import Date from'../../date.json'
 export default class Null extends Component {
     render() {
         let a = {
@@ -14,6 +14,7 @@ export default class Null extends Component {
         return (
             <div style={a}>
                 <img style={b} src="Img/Img_404.svg" alt="" />
+                {/* {Date.a[1]} */}
             </div>
         )
     }
